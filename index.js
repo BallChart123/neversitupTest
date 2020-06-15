@@ -2,6 +2,8 @@
 
 var express = require('express')
 var bodyParser = require('body-parser')
+var SequelizeInstance = require('./config/sequelizeInstance')
+const {database} = require('./config/config');
 
 var options, app;
 options = {
@@ -10,7 +12,9 @@ options = {
   }
 };
 
-
+if(database.syncronize === true){
+  SequelizeInstance.syncronize();
+}
 app = module.exports = express();
 
 app.use(bodyParser.json({
