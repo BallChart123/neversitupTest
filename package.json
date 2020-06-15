@@ -1,0 +1,28 @@
+{
+  "name": "neversitup",
+  "version": "0.3.9",
+  "description": "NeverSitUp Test",
+  "author": "Chartchai",
+  "main": "index.js",
+  "license": "license",
+  "scripts": {
+    "start": "nodemon dotenv/config server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "csrf": "3.1.0",
+    "dotenv": "^8.0.0",
+    "eslint": "6.0.1",
+    "express": "^4.12.2",
+    "node-cron": "^2.0.3",
+    "path": "^0.12.7",
+    "pg": "^7.18.2",
+    "pg-hstore": "^2.3.3",
+    "shelljs": "^0.8.3",
+    "uuidv4": "^4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  }
+}
